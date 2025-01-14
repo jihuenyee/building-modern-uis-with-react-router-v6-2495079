@@ -19,7 +19,7 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="categories" element={<Categories />}>
           <Route path=":catId" element={<Category />}>
-            <Route path="sessionId" element={<Session />} />
+            <Route path=":sessionId" element={<Session />} />
           </Route>
           <Route index element={<h3>Select a category from above</h3>} />
         </Route>
